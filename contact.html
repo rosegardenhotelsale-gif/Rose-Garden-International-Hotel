@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Rose Garden International Hotel</title>
+  
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-spinner"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom navbar-inner fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-icon"><img src="images/logo.png" alt="Rose Garden International Hotel Logo" class="img-fluid"></span>
+        Rose Garden International Hotel
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+          <li class="nav-item"><a class="nav-link" href="amenities.html">Amenities</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-2"><a class="btn btn-book" href="contact.html">Book Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header" style="background-image: url('images/hotel-lobby.png'); background-size: cover; background-position: center; background-color: #333; background-blend-mode: overlay; padding-top: 150px; padding-bottom: 80px; color: white;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 text-center page-header-content reveal">
+          <h1 class="display-4 fw-bold">Contact Us</h1>
+          <p class="lead">We would love to hear from you</p>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-custom justify-content-center mt-4">
+              <li class="breadcrumb-item"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+              <li class="breadcrumb-item active text-white-50" aria-current="page">Contact</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Info Cards -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-lg-3 col-md-6 reveal reveal-delay-1">
+          <div class="contact-card h-100 text-center p-4 border rounded shadow-sm">
+            <div class="fs-1 text-primary mb-3"><i class="bi bi-geo-alt"></i></div>
+            <h4 class="h5 mb-3">Our Location</h4>
+            <p class="text-muted mb-0">123 Garden Boulevard,<br>Phnom Penh, Cambodia 12000</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-lg-3 col-md-6 reveal reveal-delay-2">
+          <div class="contact-card h-100 text-center p-4 border rounded shadow-sm">
+            <div class="fs-1 text-primary mb-3"><i class="bi bi-telephone"></i></div>
+            <h4 class="h5 mb-3">Phone</h4>
+            <p class="text-muted mb-0">+855 23 456 789<br>+855 12 345 678</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-lg-3 col-md-6 reveal reveal-delay-3">
+          <div class="contact-card h-100 text-center p-4 border rounded shadow-sm">
+            <div class="fs-1 text-primary mb-3"><i class="bi bi-envelope"></i></div>
+            <h4 class="h5 mb-3">Email</h4>
+            <p class="text-muted mb-0">info@rosegardenhotel.com<br>reservations@rosegardenhotel.com</p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-lg-3 col-md-6 reveal reveal-delay-4">
+          <div class="contact-card h-100 text-center p-4 border rounded shadow-sm">
+            <div class="fs-1 text-primary mb-3"><i class="bi bi-clock"></i></div>
+            <h4 class="h5 mb-3">Working Hours</h4>
+            <p class="text-muted mb-0">Reception: 24/7<br>Restaurant: 6:30 AM - 10:30 PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form & Map -->
+  <section class="section-padding bg-alt">
+    <div class="container">
+      <div class="row g-5">
+        
+        <!-- Left: Form -->
+        <div class="col-lg-7 reveal reveal-left">
+          <div class="bg-white p-5 rounded shadow-sm">
+            <h3 class="mb-4">Send Us a Message</h3>
+            <form id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input type="tel" class="form-control" id="phone">
+                </div>
+                <div class="col-md-6">
+                  <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
+                  <select class="form-select" id="subject" required>
+                    <option value="" selected disabled>Select an option</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Room Reservation">Room Reservation</option>
+                    <option value="Event Booking">Event Booking</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                  <textarea class="form-control" id="message" rows="5" required></textarea>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-primary-custom px-4 py-2 w-100">
+                    <i class="bi bi-send me-2"></i>Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Right: Map -->
+        <div class="col-lg-5 reveal reveal-right">
+          <!-- Google Map iframe for Phnom Penh (approx center coordinates) -->
+          <div class="map-container rounded overflow-hidden shadow-sm mb-4" style="height: 350px;">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125427.67156942045!2d104.81987515256247!3d11.556373703350444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109513dc76a6be3%3A0x9c010ee85ab525bb!2sPhnom%20Penh%2C%20Cambodia!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div class="contact-card p-4 border rounded shadow-sm bg-white">
+            <h4 class="h5 mb-3"><i class="bi bi-info-circle me-2 text-primary"></i> Operating Hours Note</h4>
+            <p class="text-muted mb-0">Our support team is available from 8:00 AM to 8:00 PM local time. If you need immediate assistance outside of these hours, please contact our 24/7 reception desk directly at our main phone lines.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Info (Getting Here) -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="row mb-5 text-center reveal">
+        <div class="col-lg-8 mx-auto">
+          <span class="section-badge badge bg-primary text-white mb-3 px-3 py-2 rounded-pill">Directions</span>
+          <h2 class="section-title fw-bold">Getting Here</h2>
+          <div class="divider mx-auto my-3" style="width: 60px; height: 3px; background-color: var(--bs-primary);"></div>
+        </div>
+      </div>
+      
+      <div class="row g-4">
+        <!-- Airport -->
+        <div class="col-lg-4 col-md-6 reveal reveal-delay-1">
+          <div class="amenity-card p-4 border rounded shadow-sm h-100">
+            <div class="fs-1 text-primary mb-3"><i class="bi bi-airplane"></i></div>
+            <h4 class="h5 mb-3">From Airport</h4>
+            <p class="text-muted mb-0">Phnom Penh International Airport is 30 minutes away. Complimentary shuttle service available for all guests.</p>
+          </div>
+        </div>
+        <!-- Public Transport -->
+        <div class="col-lg-4 col-md-6 reveal reveal-delay-2">
+          <div class="amenity-card p-4 border rounded shadow-sm h-100">
+            <div class="fs-1 text-primary mb-3"><i class="bi bi-bus-front"></i></div>
+            <h4 class="h5 mb-3">Public Transport</h4>
+            <p class="text-muted mb-0">Located near major bus routes and tuk-tuk stands. Easy access from all parts of the city.</p>
+          </div>
+        </div>
+        <!-- Car -->
+        <div class="col-lg-4 col-md-6 reveal reveal-delay-3">
+          <div class="amenity-card p-4 border rounded shadow-sm h-100">
+            <div class="fs-1 text-primary mb-3"><i class="bi bi-car-front"></i></div>
+            <h4 class="h5 mb-3">By Car</h4>
+            <p class="text-muted mb-0">Free underground parking available. GPS coordinates: 11.5564° N, 104.9282° E</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section section-padding text-white text-center" style="background-image: url('images/hotel-exterior.png'); background-size: cover; background-position: center; background-color: #333; background-blend-mode: overlay;">
+    <div class="container reveal">
+      <div class="row">
+        <div class="col-lg-8 mx-auto cta-content">
+          <h2 class="display-5 fw-bold mb-4">Ready to Experience Luxury?</h2>
+          <p class="lead mb-5">Book your stay at Rose Garden International Hotel today and enjoy the perfect blend of comfort and elegance.</p>
+          <a href="contact.html" class="btn btn-primary-custom btn-lg px-5">Book Your Stay Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand mb-3 fs-4 fw-bold">
+            <span class="brand-icon"><img src="images/logo.png" alt="Rose Garden International Hotel Logo" class="img-fluid"></span> Rose Garden International Hotel
+          </div>
+          <p class="text-white-50">Experience luxury and comfort at Rose Garden International Hotel. Your perfect retreat awaits in the heart of the city.</p>
+          <div class="footer-social d-flex gap-3 mt-4">
+            <a href="#" aria-label="Facebook" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Twitter" class="text-white fs-5"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="TripAdvisor" class="text-white fs-5"><i class="bi bi-star"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="mb-4">Quick Links</h5>
+          <ul class="footer-links list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+            <li class="mb-2"><a href="rooms.html" class="text-white-50 text-decoration-none">Rooms & Suites</a></li>
+            <li class="mb-2"><a href="amenities.html" class="text-white-50 text-decoration-none">Amenities</a></li>
+            <li class="mb-2"><a href="gallery.html" class="text-white-50 text-decoration-none">Gallery</a></li>
+            <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
+            <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-4">Contact Info</h5>
+          <ul class="footer-contact list-unstyled">
+            <li class="d-flex mb-3">
+              <i class="bi bi-geo-alt me-3 mt-1 text-primary"></i>
+              <span class="text-white-50">123 Garden Boulevard<br>Phnom Penh, Cambodia</span>
+            </li>
+            <li class="d-flex mb-3">
+              <i class="bi bi-telephone me-3 mt-1 text-primary"></i>
+              <span class="text-white-50">+855 23 456 789</span>
+            </li>
+            <li class="d-flex mb-3">
+              <i class="bi bi-envelope me-3 mt-1 text-primary"></i>
+              <span class="text-white-50">info@rosegardenhotel.com</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-4">Newsletter</h5>
+          <p class="text-white-50">Subscribe for exclusive offers and updates.</p>
+          <form class="newsletter-form mt-3 d-flex">
+            <input type="email" class="form-control me-2" placeholder="Your email" aria-label="Email for newsletter" required>
+            <button type="submit" class="btn btn-primary"><i class="bi bi-send"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom mt-5 pt-4 border-top border-secondary text-center text-white-50">
+        <p class="mb-0">&copy; 2026 Rose Garden International Hotel. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle" aria-label="Scroll to top" style="display: none; z-index: 999;">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

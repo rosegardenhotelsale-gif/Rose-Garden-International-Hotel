@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rose Garden International Hotel | Luxury Hotel in Phnom Penh</title>
+  
+  <!-- Bootstrap 5.3 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts: Playfair Display + Inter (assumed imported in style.css or we can add them here just in case, but instructions say loaded via css/style.css, we'll follow that) -->
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-spinner"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-icon"><img src="images/logo.png" alt="Rose Garden International Hotel Logo" class="img-fluid"></span>
+        Rose Garden International Hotel
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center gap-1">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+          <li class="nav-item"><a class="nav-link" href="amenities.html">Amenities</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-2"><a class="btn btn-book" href="contact.html">Book Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center position-relative vh-100" style="background-image: url('images/FrontSide1.png'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <div class="hero-bg position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+    <div class="container position-relative hero-content z-1 text-center text-white mt-5">
+      <div class="hero-badge mb-3"><span class="badge bg-transparent border border-light text-light px-3 py-2 rounded-pill">★ ★ ★ ★ ★ LUXURY HOSPITALITY</span></div>
+      <h1 class="display-2 fw-bold mb-4">Welcome to <span class="fst-italic text-primary-custom">Rose Garden</span></h1>
+      <p class="lead mb-5 mx-auto" style="max-width: 700px;">Experience unparalleled and warm hospitality in the heart of Phnom Penh. Where every moment becomes a cherished memory.</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="rooms.html" class="btn btn-primary-custom btn-lg px-4 py-2">Explore Rooms</a>
+        <a href="#" class="btn btn-outline-light btn-lg px-4 py-2">Virtual Tour</a>
+      </div>
+    </div>
+    <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4 z-1">
+      <a href="#welcome" class="text-white text-decoration-none d-flex flex-column align-items-center scroll-indicator">
+        <small class="text-uppercase mb-2" style="letter-spacing: 2px;">Scroll</small>
+        <i class="bi bi-chevron-down fs-4 bounce"></i>
+      </a>
+    </div>
+    <div class="hero-float-1 position-absolute rounded-circle bg-white opacity-25" style="width: 300px; height: 300px; top: -100px; left: -100px; filter: blur(40px);"></div>
+    <div class="hero-float-2 position-absolute rounded-circle bg-primary opacity-25" style="width: 400px; height: 400px; bottom: -150px; right: -150px; filter: blur(50px);"></div>
+  </section>
+
+  <!-- Welcome Section -->
+  <section id="welcome" class="section-padding bg-white">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal-left">
+          <div class="welcome-image position-relative">
+            <img src="images/hotellobby1.png" alt="Hotel Lobby" class="img-fluid rounded-4 shadow-lg w-100">
+            <div class="experience-badge position-absolute bottom-0 end-0 bg-primary-custom text-white p-4 rounded-start-4 rounded-top-4 shadow mb-4 me-n4 d-none d-md-block text-center" style="transform: translate(20px, 20px);">
+              <h3 class="display-5 fw-bold mb-0">6</h3>
+              <p class="mb-0 text-uppercase small" style="letter-spacing: 1px;">Years of<br>Excellence</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 reveal-right">
+          <div class="section-badge text-primary-custom fw-bold text-uppercase mb-2" style="letter-spacing: 2px;"><small>Welcome</small></div>
+          <h2 class="section-title display-5 fw-bold mb-4">A Legacy of Comfort</h2>
+          <p class="text-muted mb-4 fs-5">Set against the vibrant backdrop of Phnom Penh, Rose Garden International Hotel offers an oasis of tranquility. We blend contemporary elegance with traditional Cambodian hospitality to deliver an extraordinary stay.</p>
+          <ul class="list-unstyled mb-4">
+            <li class="d-flex align-items-center mb-3"><i class="bi bi-check-circle-fill text-primary-custom fs-5 me-3"></i> <span>Prime location in the heart of the city</span></li>
+            <li class="d-flex align-items-center mb-3"><i class="bi bi-check-circle-fill text-primary-custom fs-5 me-3"></i> <span>Dining experiences</span></li>
+            <li class="d-flex align-items-center mb-3"><i class="bi bi-check-circle-fill text-primary-custom fs-5 me-3"></i> <span>Personalized concierge services 24/7</span></li>
+          </ul>
+          <a href="about.html" class="btn btn-outline-custom px-4 py-2">Discover More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Rooms -->
+  <section class="section-padding bg-ivory">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <div class="section-badge text-primary-custom fw-bold text-uppercase mb-2" style="letter-spacing: 2px;"><small>Accommodation</small></div>
+        <h2 class="section-title display-5 fw-bold mb-3">Our Rooms & Suites</h2>
+        <p class="section-subtitle text-muted mx-auto" style="max-width: 600px;">Experience the perfect blend of comfort and style in our meticulously designed accommodations.</p>
+        <div class="divider mx-auto mt-4 mb-4" style="width: 50px; height: 3px; background-color: var(--primary-color);"></div>
+      </div>
+
+      <!-- Room Carousel -->
+      <div class="position-relative reveal" id="roomCarouselWrapper">
+        <!-- Navigation Arrows -->
+        <button class="room-carousel-btn room-carousel-prev" id="roomPrev" aria-label="Previous rooms">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <button class="room-carousel-btn room-carousel-next" id="roomNext" aria-label="Next rooms">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+
+        <!-- Carousel Track -->
+        <div class="room-carousel-viewport" style="overflow: hidden; border-radius: 16px;">
+          <div class="room-carousel-track" id="roomTrack" style="display: flex; transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);">
+
+            <!-- Slide 1: Superior Double Room -->
+            <div class="room-carousel-slide" style="min-width: 33.333%; padding: 0 12px; box-sizing: border-box;">
+              <div class="card room-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                <div class="position-relative">
+                  <img src="images/rooms/superiordouble/bedroom.png" class="card-img-top" alt="Superior Double Room">
+                  <div class="position-absolute top-0 end-0 bg-primary-custom text-white px-3 py-1 m-3 rounded-pill fw-bold">From USD89.00/night</div>
+                </div>
+                <div class="card-body p-4">
+                  <h4 class="card-title fw-bold mb-3">Superior Double Room</h4>
+                  <div class="d-flex justify-content-between text-muted mb-3 small">
+                    <span><i class="bi bi-arrows-fullscreen me-1"></i> 35m²</span>
+                    <span><i class="bi bi-house-door me-1"></i> King Bed</span>
+                    <span><i class="bi bi-building me-1"></i> City View</span>
+                  </div>
+                  <p class="card-text text-muted mb-4">A perfect retreat with a spacious king-size bed, modern amenities, and captivating city views from floor-to-ceiling windows.</p>
+                  <div class="d-flex gap-2 text-primary-custom mb-4 fs-5">
+                    <i class="bi bi-wifi" title="WiFi"></i>
+                    <i class="bi bi-snow" title="Air Conditioning"></i>
+                    <i class="bi bi-tv" title="Smart TV"></i>
+                    <i class="bi bi-cup-straw" title="Minibar"></i>
+                  </div>
+                  <a href="rooms/superior-double.html" class="btn btn-outline-custom w-100">View Details</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2: Superior Twin Room -->
+            <div class="room-carousel-slide" style="min-width: 33.333%; padding: 0 12px; box-sizing: border-box;">
+              <div class="card room-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                <div class="position-relative">
+                  <img src="images/rooms/superiortwin/bedroom.png" class="card-img-top" alt="Superior Twin Room">
+                  <div class="position-absolute top-0 end-0 bg-primary-custom text-white px-3 py-1 m-3 rounded-pill fw-bold">From USD89.00/night</div>
+                </div>
+                <div class="card-body p-4">
+                  <h4 class="card-title fw-bold mb-3">Superior Twin Room</h4>
+                  <div class="d-flex justify-content-between text-muted mb-3 small">
+                    <span><i class="bi bi-arrows-fullscreen me-1"></i> 35m²</span>
+                    <span><i class="bi bi-house-door me-1"></i> Twin Beds</span>
+                    <span><i class="bi bi-building me-1"></i> City View</span>
+                  </div>
+                  <p class="card-text text-muted mb-4">Ideal for friends or colleagues, featuring two plush twin beds with refined comfort and modern amenities throughout.</p>
+                  <div class="d-flex gap-2 text-primary-custom mb-4 fs-5">
+                    <i class="bi bi-wifi" title="WiFi"></i>
+                    <i class="bi bi-snow" title="Air Conditioning"></i>
+                    <i class="bi bi-tv" title="Smart TV"></i>
+                    <i class="bi bi-cup-straw" title="Minibar"></i>
+                  </div>
+                  <a href="rooms/superior-twin.html" class="btn btn-outline-custom w-100">View Details</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3: Deluxe Double Room -->
+            <div class="room-carousel-slide" style="min-width: 33.333%; padding: 0 12px; box-sizing: border-box;">
+              <div class="card room-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                <div class="position-relative">
+                  <img src="images/rooms/deluxedouble/bedroom.png" class="card-img-top" alt="Deluxe Double Room">
+                  <div class="position-absolute top-0 end-0 bg-primary-custom text-white px-3 py-1 m-3 rounded-pill fw-bold">From USD109.00/night</div>
+                </div>
+                <div class="card-body p-4">
+                  <h4 class="card-title fw-bold mb-3">Deluxe Double Room</h4>
+                  <div class="d-flex justify-content-between text-muted mb-3 small">
+                    <span><i class="bi bi-arrows-fullscreen me-1"></i> 42m²</span>
+                    <span><i class="bi bi-house-door me-1"></i> King Bed</span>
+                    <span><i class="bi bi-building me-1"></i> City View</span>
+                  </div>
+                  <p class="card-text text-muted mb-4">Elevated luxury with premium Egyptian cotton linens, a spa-like marble bathroom, and a generous 42m² of elegant space.</p>
+                  <div class="d-flex gap-2 text-primary-custom mb-4 fs-5">
+                    <i class="bi bi-wifi" title="WiFi"></i>
+                    <i class="bi bi-snow" title="Air Conditioning"></i>
+                    <i class="bi bi-tv" title="50&quot; Smart TV"></i>
+                    <i class="bi bi-cup-hot" title="Nespresso"></i>
+                    <i class="bi bi-droplet" title="Rain Shower"></i>
+                  </div>
+                  <a href="rooms/deluxe-double.html" class="btn btn-outline-custom w-100">View Details</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4: Deluxe Twin Room -->
+            <div class="room-carousel-slide" style="min-width: 33.333%; padding: 0 12px; box-sizing: border-box;">
+              <div class="card room-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                <div class="position-relative">
+                  <img src="images/rooms/deluxetwin/bedroom.png" class="card-img-top" alt="Deluxe Twin Room">
+                  <div class="position-absolute top-0 end-0 bg-primary-custom text-white px-3 py-1 m-3 rounded-pill fw-bold">From USD109.00/night</div>
+                </div>
+                <div class="card-body p-4">
+                  <h4 class="card-title fw-bold mb-3">Deluxe Twin Room</h4>
+                  <div class="d-flex justify-content-between text-muted mb-3 small">
+                    <span><i class="bi bi-arrows-fullscreen me-1"></i> 42m²</span>
+                    <span><i class="bi bi-house-door me-1"></i> Twin Beds</span>
+                    <span><i class="bi bi-building me-1"></i> City View</span>
+                  </div>
+                  <p class="card-text text-muted mb-4">Deluxe amenities with twin-bed flexibility. Premium linens, spa-like bathroom, and sophisticated design throughout.</p>
+                  <div class="d-flex gap-2 text-primary-custom mb-4 fs-5">
+                    <i class="bi bi-wifi" title="WiFi"></i>
+                    <i class="bi bi-snow" title="Air Conditioning"></i>
+                    <i class="bi bi-tv" title="50&quot; Smart TV"></i>
+                    <i class="bi bi-cup-hot" title="Nespresso"></i>
+                    <i class="bi bi-droplet" title="Rain Shower"></i>
+                  </div>
+                  <a href="rooms/deluxe-twin.html" class="btn btn-outline-custom w-100">View Details</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 5: Business Suite -->
+            <div class="room-carousel-slide" style="min-width: 33.333%; padding: 0 12px; box-sizing: border-box;">
+              <div class="card room-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                <div class="position-relative">
+                  <img src="images/rooms/businesssuite/bedroom.png" class="card-img-top" alt="Business Suite">
+                  <div class="position-absolute top-0 end-0 bg-primary-custom text-white px-3 py-1 m-3 rounded-pill fw-bold">From USD250.00/night</div>
+                </div>
+                <div class="card-body p-4">
+                  <h4 class="card-title fw-bold mb-3">Business Suite</h4>
+                  <div class="d-flex justify-content-between text-muted mb-3 small">
+                    <span><i class="bi bi-arrows-fullscreen me-1"></i> 65m²</span>
+                    <span><i class="bi bi-house-door me-1"></i> King Bed</span>
+                    <span><i class="bi bi-binoculars me-1"></i> Panoramic</span>
+                  </div>
+                  <p class="card-text text-muted mb-4">The ultimate executive retreat with separate living area, fully equipped workspace, and dedicated butler-style service.</p>
+                  <div class="d-flex gap-2 text-primary-custom mb-4 fs-5">
+                    <i class="bi bi-wifi" title="WiFi"></i>
+                    <i class="bi bi-snow" title="Climate Control"></i>
+                    <i class="bi bi-tv" title="55&quot; Smart TV"></i>
+                    <i class="bi bi-cup-hot" title="Nespresso"></i>
+                    <i class="bi bi-person-badge" title="Butler Service"></i>
+                  </div>
+                  <a href="rooms/business-suite.html" class="btn btn-outline-custom w-100">View Details</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 6: Family Suite -->
+            <div class="room-carousel-slide" style="min-width: 33.333%; padding: 0 12px; box-sizing: border-box;">
+              <div class="card room-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                <div class="position-relative">
+                  <img src="images/rooms/familysuite/bedroom.png" class="card-img-top" alt="Family Suite">
+                  <div class="position-absolute top-0 end-0 bg-primary-custom text-white px-3 py-1 m-3 rounded-pill fw-bold">From USD450.00/night</div>
+                </div>
+                <div class="card-body p-4">
+                  <h4 class="card-title fw-bold mb-3">Family Suite</h4>
+                  <div class="d-flex justify-content-between text-muted mb-3 small">
+                    <span><i class="bi bi-arrows-fullscreen me-1"></i> 85m²</span>
+                    <span><i class="bi bi-house-door me-1"></i> King + Twin</span>
+                    <span><i class="bi bi-flower1 me-1"></i> Garden View</span>
+                  </div>
+                  <p class="card-text text-muted mb-4">A spacious 85m² haven for families with separate bedrooms, garden views, two bathrooms, and kids' club access.</p>
+                  <div class="d-flex gap-2 text-primary-custom mb-4 fs-5">
+                    <i class="bi bi-wifi" title="WiFi"></i>
+                    <i class="bi bi-snow" title="Air Conditioning"></i>
+                    <i class="bi bi-tv" title="Two Smart TVs"></i>
+                    <i class="bi bi-cup-hot" title="Nespresso"></i>
+                    <i class="bi bi-emoji-smile" title="Kids' Club"></i>
+                  </div>
+                  <a href="rooms/family-suite.html" class="btn btn-outline-custom w-100">View Details</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Dot Indicators -->
+        <div class="room-carousel-dots" id="roomDots">
+          <button class="room-dot active" data-index="0" aria-label="Slide group 1"></button>
+          <button class="room-dot" data-index="1" aria-label="Slide group 2"></button>
+        </div>
+      </div>
+
+      <div class="text-center mt-5 reveal">
+        <a href="rooms.html" class="btn btn-primary-custom px-4 py-2">View All Rooms</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Room Carousel Styles -->
+  <style>
+    .room-carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 2px solid rgba(0,0,0,0.1);
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      color: #333;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .room-carousel-btn:hover {
+      background: var(--primary-color, #b08d57);
+      border-color: var(--primary-color, #b08d57);
+      color: #fff;
+      box-shadow: 0 6px 25px rgba(176, 141, 87, 0.3);
+    }
+    .room-carousel-prev { left: -24px; }
+    .room-carousel-next { right: -24px; }
+
+    .room-carousel-dots {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 30px;
+    }
+    .room-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: 2px solid #ccc;
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      padding: 0;
+    }
+    .room-dot:hover {
+      border-color: var(--primary-color, #b08d57);
+    }
+    .room-dot.active {
+      background: var(--primary-color, #b08d57);
+      border-color: var(--primary-color, #b08d57);
+      width: 32px;
+      border-radius: 6px;
+    }
+
+    .room-carousel-slide .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .room-carousel-slide .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.12) !important;
+    }
+
+    @media (max-width: 991.98px) {
+      .room-carousel-slide { min-width: 50% !important; }
+      .room-carousel-prev { left: -12px; }
+      .room-carousel-next { right: -12px; }
+    }
+    @media (max-width: 575.98px) {
+      .room-carousel-slide { min-width: 100% !important; }
+      .room-carousel-btn { width: 40px; height: 40px; font-size: 1rem; }
+      .room-carousel-prev { left: -8px; }
+      .room-carousel-next { right: -8px; }
+    }
+  </style>
+
+  <!-- Room Carousel Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const track = document.getElementById('roomTrack');
+      const prevBtn = document.getElementById('roomPrev');
+      const nextBtn = document.getElementById('roomNext');
+      const dots = document.querySelectorAll('.room-dot');
+      const slides = document.querySelectorAll('.room-carousel-slide');
+
+      let currentIndex = 0;
+      let slidesPerView = 3;
+      let autoPlayInterval;
+
+      function getSlidesPerView() {
+        if (window.innerWidth <= 575.98) return 1;
+        if (window.innerWidth <= 991.98) return 2;
+        return 3;
+      }
+
+      function getMaxIndex() {
+        return Math.max(0, slides.length - slidesPerView);
+      }
+
+      function updateCarousel() {
+        const slideWidth = 100 / slidesPerView;
+        slides.forEach(s => s.style.minWidth = slideWidth + '%');
+        const offset = -(currentIndex * (100 / slidesPerView));
+        track.style.transform = 'translateX(' + offset + '%)';
+        updateDots();
+      }
+
+      function updateDots() {
+        const maxIdx = getMaxIndex();
+        const totalDotGroups = maxIdx + 1;
+        const dotsContainer = document.getElementById('roomDots');
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i < totalDotGroups; i++) {
+          const dot = document.createElement('button');
+          dot.className = 'room-dot' + (i === currentIndex ? ' active' : '');
+          dot.setAttribute('data-index', i);
+          dot.setAttribute('aria-label', 'Slide group ' + (i + 1));
+          dot.addEventListener('click', function() {
+            currentIndex = parseInt(this.getAttribute('data-index'));
+            updateCarousel();
+            resetAutoPlay();
+          });
+          dotsContainer.appendChild(dot);
+        }
+      }
+
+      function goNext() {
+        currentIndex = currentIndex >= getMaxIndex() ? 0 : currentIndex + 1;
+        updateCarousel();
+      }
+
+      function goPrev() {
+        currentIndex = currentIndex <= 0 ? getMaxIndex() : currentIndex - 1;
+        updateCarousel();
+      }
+
+      function resetAutoPlay() {
+        clearInterval(autoPlayInterval);
+        autoPlayInterval = setInterval(goNext, 5000);
+      }
+
+      prevBtn.addEventListener('click', function() { goPrev(); resetAutoPlay(); });
+      nextBtn.addEventListener('click', function() { goNext(); resetAutoPlay(); });
+
+      // Touch/Swipe support
+      let startX = 0, endX = 0;
+      track.addEventListener('touchstart', function(e) { startX = e.touches[0].clientX; }, { passive: true });
+      track.addEventListener('touchend', function(e) {
+        endX = e.changedTouches[0].clientX;
+        const diff = startX - endX;
+        if (Math.abs(diff) > 50) {
+          if (diff > 0) { goNext(); } else { goPrev(); }
+          resetAutoPlay();
+        }
+      }, { passive: true });
+
+      // Responsive resize
+      window.addEventListener('resize', function() {
+        slidesPerView = getSlidesPerView();
+        if (currentIndex > getMaxIndex()) currentIndex = getMaxIndex();
+        updateCarousel();
+      });
+
+      // Init
+      slidesPerView = getSlidesPerView();
+      updateCarousel();
+      autoPlayInterval = setInterval(goNext, 5000);
+    });
+  </script>
+
+  <!-- Amenities Preview -->
+  <section class="section-padding bg-alt">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <div class="section-badge text-primary-custom fw-bold text-uppercase mb-2" style="letter-spacing: 2px;"><small>Facilities</small></div>
+        <h2 class="section-title display-5 fw-bold mb-3">Amenities</h2>
+        <div class="divider mx-auto mt-4 mb-4" style="width: 50px; height: 3px; background-color: var(--primary-color);"></div>
+      </div>
+      
+      <div class="row g-4 text-center">
+        <div class="col-lg-3 col-md-6 reveal reveal-delay-1">
+          <div class="amenity-card bg-white p-4 rounded-4 shadow-sm h-100 transition-hover">
+            <div class="icon-wrapper bg-ivory text-primary-custom rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+              <i class="bi bi-water fs-1"></i>
+            </div>
+            <h4 class="fw-bold mb-3">Buffet Breakfast</h4>
+            <p class="text-muted mb-0">Start your day with a delicious breakfast in our dining room.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 reveal reveal-delay-2">
+          <div class="amenity-card bg-white p-4 rounded-4 shadow-sm h-100 transition-hover">
+            <div class="icon-wrapper bg-ivory text-primary-custom rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+              <i class="bi bi-heart-pulse fs-1"></i>
+            </div>
+            <h4 class="fw-bold mb-3">Ballroom</h4>
+            <p class="text-muted mb-0">Perfect for events and gatherings with surroundings.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 reveal reveal-delay-3">
+          <div class="amenity-card bg-white p-4 rounded-4 shadow-sm h-100 transition-hover">
+            <div class="icon-wrapper bg-ivory text-primary-custom rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+              <i class="bi bi-cup-hot fs-1"></i>
+            </div>
+            <h4 class="fw-bold mb-3">Restaurant</h4>
+            <p class="text-muted mb-0">Savor exquisite culinary delights prepared by our award-winning chefs.</p>
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 reveal reveal-delay-4">
+          <div class="amenity-card bg-white p-4 rounded-4 shadow-sm h-100 transition-hover">
+            <div class="icon-wrapper bg-ivory text-primary-custom rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+              <i class="bi bi-bicycle fs-1"></i>
+            </div>
+            <h4 class="fw-bold mb-3">Conference Room</h4>
+            <p class="text-muted mb-0">Host your meetings and events in our well-equipped conference facilities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <div class="section-badge text-primary-custom fw-bold text-uppercase mb-2" style="letter-spacing: 2px;"><small>Reviews</small></div>
+        <h2 class="section-title display-5 fw-bold mb-3">What Our Guests Say</h2>
+        <div class="divider mx-auto mt-4 mb-4" style="width: 50px; height: 3px; background-color: var(--primary-color);"></div>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 reveal reveal-delay-1">
+          <div class="testimonial-card bg-ivory p-4 rounded-4 position-relative h-100">
+            <div class="quote-icon position-absolute top-0 end-0 mt-3 me-3 opacity-25 text-primary-custom display-1 lh-1">❝</div>
+            <div class="stars text-warning mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <blockquote class="mb-4 text-muted fst-italic">"Absolutely phenomenal experience. The staff went above and beyond to ensure our stay was perfect. The views from the Presidential Suite were breathtaking."</blockquote>
+            <div class="d-flex align-items-center">
+              <div>
+                <h5 class="mb-1 fw-bold">Sarah Jenkins</h5>
+                <p class="mb-0 text-muted small">London, UK</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 reveal reveal-delay-2">
+          <div class="testimonial-card bg-ivory p-4 rounded-4 position-relative h-100">
+            <div class="quote-icon position-absolute top-0 end-0 mt-3 me-3 opacity-25 text-primary-custom display-1 lh-1">❝</div>
+            <div class="stars text-warning mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <blockquote class="mb-4 text-muted fst-italic">"An oasis in the middle of Phnom Penh. The fine dining restaurant offered some of the best culinary experiences I've ever had. Highly recommended!"</blockquote>
+            <div class="d-flex align-items-center">
+              <div>
+                <h5 class="mb-1 fw-bold">David Chen</h5>
+                <p class="mb-0 text-muted small">Singapore</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 reveal reveal-delay-3">
+          <div class="testimonial-card bg-ivory p-4 rounded-4 position-relative h-100">
+            <div class="quote-icon position-absolute top-0 end-0 mt-3 me-3 opacity-25 text-primary-custom display-1 lh-1">❝</div>
+            <div class="stars text-warning mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+            </div>
+            <blockquote class="mb-4 text-muted fst-italic">"Beautifully designed rooms with impeccable attention to detail. The spa facilities are top-notch and exactly what we needed after a long day of exploring."</blockquote>
+            <div class="d-flex align-items-center">
+              <div>
+                <h5 class="mb-1 fw-bold">Elena Rossi</h5>
+                <p class="mb-0 text-muted small">Milan, Italy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section position-relative py-5 text-white text-center" style="background-image: url('images/FrontSide1.png'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <div class="cta-section-bg position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
+    <div class="container position-relative cta-content py-5 z-1 reveal">
+      <h2 class="display-4 fw-bold mb-4">Ready for an Unforgettable Stay?</h2>
+      <p class="lead mb-5 mx-auto" style="max-width: 700px;">Book directly with us to enjoy exclusive benefits, best rate guarantees, and personalized services tailored to your needs.</p>
+      <a href="contact.html" class="btn btn-primary-custom btn-lg px-5 py-3 fw-bold text-uppercase" style="letter-spacing: 1px;">Book Your Stay</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white pt-5 pb-3">
+    <div class="container pt-4">
+      <div class="row g-4 mb-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand fs-3 fw-bold mb-3"><span class="brand-icon text-primary-custom me-2"><img src="images/logo.png" alt="Rose Garden International Hotel Logo" class="img-fluid"></span> Rose Garden International Hotel</div>
+          <p class="text-light opacity-75 mb-4">Experience and comfort at Rose Garden International Hotel. Your perfect retreat awaits in the heart of the city.</p>
+          <div class="footer-social d-flex gap-3">
+            <a href="#" aria-label="Facebook" class="text-white bg-secondary bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center transition-hover" style="width: 40px; height: 40px;"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram" class="text-white bg-secondary bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center transition-hover" style="width: 40px; height: 40px;"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Twitter" class="text-white bg-secondary bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center transition-hover" style="width: 40px; height: 40px;"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="TripAdvisor" class="text-white bg-secondary bg-opacity-25 rounded-circle d-flex align-items-center justify-content-center transition-hover" style="width: 40px; height: 40px;"><i class="bi bi-star"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="fw-bold mb-4">Quick Links</h5>
+          <ul class="footer-links list-unstyled mb-0 d-flex flex-column gap-2">
+            <li><a href="index.html" class="text-light opacity-75 text-decoration-none transition-hover">Home</a></li>
+            <li><a href="rooms.html" class="text-light opacity-75 text-decoration-none transition-hover">Rooms & Suites</a></li>
+            <li><a href="amenities.html" class="text-light opacity-75 text-decoration-none transition-hover">Amenities</a></li>
+            <li><a href="gallery.html" class="text-light opacity-75 text-decoration-none transition-hover">Gallery</a></li>
+            <li><a href="about.html" class="text-light opacity-75 text-decoration-none transition-hover">About Us</a></li>
+            <li><a href="contact.html" class="text-light opacity-75 text-decoration-none transition-hover">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-4">Contact Info</h5>
+          <ul class="footer-contact list-unstyled mb-0 d-flex flex-column gap-3">
+            <li class="d-flex align-items-start"><i class="bi bi-geo-alt text-primary-custom mt-1 me-3"></i><span class="text-light opacity-75">Rose Garden International Hotel 708, Street 1986 Khan Sen Sangkat Phnom Penh Thmei,<br>Phnom Penh, Cambodia</span></li>
+            <li class="d-flex align-items-center"><i class="bi bi-telephone text-primary-custom me-3"></i><span class="text-light opacity-75">(855)23 231 199 / (855)67 208 103</span></li>
+            <li class="d-flex align-items-center"><i class="bi bi-envelope text-primary-custom me-3"></i><span class="text-light opacity-75">reservations.meigui@gmail.com</span></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-4">Newsletter</h5>
+          <p class="text-light opacity-75 mb-4">Subscribe for exclusive offers and updates.</p>
+          <form class="newsletter-form d-flex position-relative">
+            <input type="email" class="form-control bg-secondary bg-opacity-25 border-0 text-white px-4 py-2 pe-5" placeholder="Your email" aria-label="Email for newsletter" required>
+            <button type="submit" class="btn btn-primary-custom position-absolute top-0 end-0 h-100 rounded-start-0 px-3"><i class="bi bi-send"></i></button>
+          </form>
+        </div>
+      </div>
+      <hr class="border-secondary opacity-25 mb-4">
+      <div class="footer-bottom text-center text-light opacity-50 small">
+        <p class="mb-0">&copy; 2026 Rose Garden International Hotel. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top position-fixed bottom-0 end-0 m-4 btn btn-primary-custom rounded-circle shadow" style="width: 45px; height: 45px; display: none; z-index: 1000;" aria-label="Scroll to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

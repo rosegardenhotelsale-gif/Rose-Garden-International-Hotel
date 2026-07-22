@@ -468,7 +468,6 @@ p {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(176, 137, 104, 0.75), rgba(221, 160, 160, 0.6));
   z-index: 1;
 }
 
